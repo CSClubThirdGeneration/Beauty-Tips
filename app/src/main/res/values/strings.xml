@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Beauty Tips</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="title">
+        <item>Eye</item>
+        <item>Lips</item>
+        <item>Nails
+        </item>
+        <item>Acene</item>
+        <item>Skin care</item>
+        <item>
+            Hair
+        </item>
+        <item>Body Weight</item>
+        <item>Teeth</item>
+
+    </string-array>
+
+    <string-array name="eye_title">
+      <item >မ်က္ကြင္းညိဳျခင္း</item>
+      <item>မ်က္ကပ္မွန္</item>
+       <item>မ်က္လုံးနဲ႔မိတ္ကပ္အလြယ္တကူ</item>
+       <item>မ်က္လုံး</item>
+
+    </string-array>
+    <string-array name="lips_title">
+       <item>နူတ္ခမ္းနီဆိုးနည္းအမွားမ်ား</item>
+<item>သဘာ၀နူတ္ခမ္းသားကိုပိုင္ဆိုင္ရန္လိုက္နာရမည္.အခ်က္</item>
+<item>နူတ္ခမ္းသားပန္းေ၇ာင္သန္းဖို့သဘာ၀ပစၥည္းမ်ား</item>
+    </string-array>
+
+    <string-array name="nails_title">
+        <item>ပ်ားရည္နဲ႕လက္သည္းလွေအာင္ျပဳလုပ္နည္း</item>
+<item>ဆားျဖင့္လက္သည္းထိန္းသိန္းနည္း</item>
+<item>ပန္းသီးရွာလကာရည္ႏွင့္လက္သည္းကိုထိန္းထိန္းနည္း</item>
+<item>သံပယိုသီးနဲ႕လက္သည္းထိန္းသိမ္းနည္း</item>
+<item>သံပရာသီးနဲ႕လက္သည္းထိန္းသိမ္းနည္း</item>
+<item>လက္သည္းနီလွပေအာင္ဆိုးနည္း</item>
+    </string-array>
+<string-array name="acne_title">
+    <item>ဝက္ျခံအတြက္တိုနာ</item>
+        <item>ပန္းသီးရွာလကာရည္  ႏွင့္  သရက္သီးျဖင့္ဝက္ျခံေပ်ာက္ေအာင္ျပဳလုပ္နည္း</item>
+        <item>ငွက္ေပ်ာသီးနဲ႕ငွက္ေပ်ာခြံကိုသံုး၍ဝက္ျခံကာကြယ္နည္း</item>
+        <item>ေရနဲ႕ဆား/ေရေႏြးႀကမ္းႏွင့္မုန္လာဥနီ</item>
+        <item>ေရခဲတံုးနဲ့ရွားေစာင္းလက္ပက္</item>
+        <item>မုန့္ဖုတ္ဆိုဒါနဲ့နႏြင္း</item>
+        <item>သြားတိုက္ေဆးနွင့္ျကက္သြန္ျဖဴ</item>
+       <item> ဆားဝက္ျခံအတြက္နည္းလမ္းေကာင္းမ်ား</item>
+
+</string-array>
+
+    <string-array name="skincare_title">
+        <item>လက္နဲ့ေျခေထာက္အတြက္ထိန္းသိမ္းနည္း</item>
+        <item>ေခ်ြးေပါကိက်ယိျခင္း</item>
+<item>အဆီဖုအတြက္ကာကြယ္နည္း</item>
+<item>က်န္းမာစိုေျပတဲ့အသားေရ႐ရိွေစရန္နည္းလမ္းမ်ား</item>
+<item>ေနေလာင္ဒဏ္ကာကြယ္နိုင္ရန္နည္းလမ္းမ်ား</item>
+<item>Sensitiveျဖစိတဲ့အသားအေရအတြကိထိန္းသိမ္းနည္း</item>
+<item>အေရးအေျကာငိးေပ်ာက္ကင္းေစဖို့နည္းလမ္းမ်ား</item>
+<item>အမာရြတ္ေပ်ာက္ကင္းေစဖို့နည္းလမ္းေကာင္းမ်ား
+</item>
+    </string-array>
+
+    <string-array name="hair_title">
+        <item>သဘာဝေပါငိးတင္နည္းမ်ား</item>
+<item>
+ေျခာက္ေသြ့တဲ့ဆံေကသာအတြက္နည္းလမ္းမ်ား</item>
+<item>ဆံေကသာကိုေပ်ာ့ေပ်ာင္းေစဖို့သဘာဝနည္းလမ္းမ်ား</item>
+<item>ဆံေကသာအရွည္ျမန္ေစရန္နည္းလမ္းမ်ား</item>
+<item>ဆံပင္ေကာက္ရန္သဘာဝနည္းလမ္းမ်ား</item>
+<item>ေဗာက္ထျခင္းကိုကာကြယ္ရမည့္နည္းလမ္းမ်ား</item>
+<item>ဆံပင္နွစ္ခြျဖစ္ျခင္းကိုကာကြယ္နည္း</item>
+
+    </string-array>
+
+    <string-array name="weight_title">
+        <item>အိပ္ခ်ိန္နည္းျခင္း သို့ အိပ္ခ်ိန္မ်ားလြန္းျခင္း</item>
+<item>အစာမစားျခင္း</item>
+<item>စိတ္ဖိစီးမႈမ်ားျခင္း</item>
+<item>မနက္စာပံုမွန္မစားျခင္းနွင့္အာဟာရျပည့္ဝစြာမစားသံုးျခင္း</item>
+<item>ဝမ္းဗိုက္ခ်ပ္ေစရန္နည္းလမ္းမ်ား</item>
+<item>ကိုယ္အေလးခ်ိန္အခ်ိန္တိုအတြင္းေလ်ာ့ခ်မည့္နည္းလမ္းမ်ား</item>
+<item>ခ်ိဳငိ့ေအာက္နားကအဆီမ်ားေလ်ွာ့ခ်ျခင္း</item>
+    </string-array>
+
+
+    <string-array name="teeth_title">
+      <item>ဆားနဲ့မုန့္ဖုတ္ဆိုဒါသံုးျပီးသြားမ်ားျဖဴေဖြးေစမည့္နည္းလမ္း</item>
+<item>ငွက္ေပ်ာသီးခံြျဖင့္ျဖဴေဖြးေစနည္း</item>
+<item>သံပယိုသီးျဖင့္ျဖဴေဖြးေစနည္း</item>
+<item>တမာရိုးျဖင့္ျဖဴေဖြးေစနည္း</item>
+<item>အုန္းဆီျဖင့္ျဖဴေဖြးေစနည္း</item>
+
+
+
+
+    </string-array>
+</resources>
