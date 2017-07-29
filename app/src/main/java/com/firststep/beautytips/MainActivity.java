@@ -20,6 +20,8 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.firststep.beautytips.R.array.lips_description;
+
 public class MainActivity extends AppCompatActivity {
     private TitleAdapter titleAdapter;
     private RecyclerView recyclerView;
@@ -39,40 +41,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-         sliderLayout = (SliderLayout) findViewById(R.id.slider);
+        sliderLayout = (SliderLayout) findViewById(R.id.slider);
 
         TextSliderView textSliderView = new TextSliderView(this);
         textSliderView
-                .description("Acene")
-                .image(R.drawable.a4);
+                .description("BeautyTips")
+                .image(R.drawable.cover1);
 
         sliderLayout.addSlider(textSliderView);
         TextSliderView textSliderView1 = new TextSliderView(this);
         textSliderView1
-                .description("Eye")
-                .image(R.drawable.eye1);
+                .description("BeautyTips")
+                .image(R.drawable.cover2);
 
         sliderLayout.addSlider(textSliderView1);
         TextSliderView textSliderView3 = new TextSliderView(this);
         textSliderView3
-                .description("Hair")
-                .image(R.drawable.h2);
-
+                .description("BeautyTips")
+                .image(R.drawable.cover3);
         sliderLayout.addSlider(textSliderView3);
-        TextSliderView textSliderView4 = new TextSliderView(this);
-        textSliderView4
-                .description("Skin Care")
-                .image(R.drawable.s2);
 
 
-        sliderLayout.addSlider(textSliderView4);
 
-        TextSliderView textSliderView2 = new TextSliderView(this);
-        textSliderView2
-                .description("Lips")
-                .image(R.drawable.ll7);
 
-        sliderLayout.addSlider(textSliderView2);
+
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler);
         list = new ArrayList<>();
@@ -83,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void OnItemCLick(View view, int position) {
                 String[] title = getResources().getStringArray(R.array.title);
+
+                //title
                 String[] eye_title=getResources().getStringArray(R.array.eye_title);
                 String[] lips_title=getResources().getStringArray(R.array.lips_title);
                 String[] nails_title=getResources().getStringArray(R.array.nails_title);
@@ -91,11 +85,22 @@ public class MainActivity extends AppCompatActivity {
                 String[] hair_title=getResources().getStringArray(R.array.hair_title);
                 String[] weight_title=getResources().getStringArray(R.array.weight_title);
                 String[] teeth_title=getResources().getStringArray(R.array.teeth_title);
+
+                //Description
+                String[] eye_description = getResources().getStringArray(R.array.eye_description);
+String[] lips_description=getResources().getStringArray(R.array.lips_description);
+                String[] nails_description=getResources().getStringArray(R.array.nails_description);
+                String[] acene_description=getResources().getStringArray(R.array.acene_description);
+                String[] skincare_description=getResources().getStringArray(R.array.skincare_description);
+                String[] hair_description=getResources().getStringArray(R.array.hair_description);
+                String[] bodyweight_description=getResources().getStringArray(R.array.bodyweight_description);
+                String[] teeth_description=getResources().getStringArray(R.array.teeth_description);
                 switch (position){
                     case 0:
                         Intent intent = new Intent(MainActivity.this,DetailsActivity.class);
                         intent.putExtra("title",title[position]);
                         intent.putExtra("itemtitle",eye_title);
+                        intent.putExtra("itemdescription", eye_description);
                         startActivity(intent);
                         break;
 
@@ -104,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent1=new Intent(MainActivity.this,DetailsActivity.class);
                         intent1.putExtra("title",title[position]);
                         intent1.putExtra("itemtitle",lips_title);
+                        intent1.putExtra("itemdescription", lips_description);
                         startActivity(intent1);
                         break;
 
@@ -112,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent2=new Intent(MainActivity.this,DetailsActivity.class);
                         intent2.putExtra("title",title[position]);
                         intent2.putExtra("itemtitle",nails_title);
+                        intent2.putExtra("itemdescription",nails_description);
                         startActivity(intent2);
                         break;
 
@@ -120,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent3=new Intent(MainActivity.this,DetailsActivity.class);
                         intent3.putExtra("title",title[position]);
                         intent3.putExtra("itemtitle",acne_title);
+                        intent3.putExtra("itemdescription",acene_description);
                         startActivity(intent3);
                         break;
 
@@ -128,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent4=new Intent(MainActivity.this,DetailsActivity.class);
                         intent4.putExtra("title",title[position]);
                         intent4.putExtra("itemtitle",skincare_title);
+                        intent4.putExtra("itemdescription",skincare_description);
                         startActivity(intent4);
                         break;
 
@@ -136,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent5=new Intent(MainActivity.this,DetailsActivity.class);
                         intent5.putExtra("title",title[position]);
                         intent5.putExtra("itemtitle",hair_title);
+                        intent5.putExtra("itemdescription",hair_description);
                         startActivity(intent5);
                         break;
 
@@ -144,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent6=new Intent(MainActivity.this,DetailsActivity.class);
                         intent6.putExtra("title",title[position]);
                         intent6.putExtra("itemtitle",weight_title);
+                        intent6.putExtra("itemdescription",bodyweight_description);
                         startActivity(intent6);
                         break;
 
@@ -151,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent7=new Intent(MainActivity.this,DetailsActivity.class);
                         intent7.putExtra("title",title[position]);
                         intent7.putExtra("itemtitle",teeth_title);
+                        intent7.putExtra("itemdescription",teeth_description);
                         startActivity(intent7);
                         break;
                 }
