@@ -36,7 +36,7 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(TitleAdapter.ViewHolder holder, int position) {
         TitleModel titleModel=list.get(position);
-        Picasso.with(context).load(titleModel.getImage()).into(holder.imageView);
+        Picasso.with(context).load(titleModel.getImage()).error(R.mipmap.ic_launcher).into(holder.imageView);
         holder.textView.setText(titleModel.getTitle());
     }
 
