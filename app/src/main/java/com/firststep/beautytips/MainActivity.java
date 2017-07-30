@@ -262,7 +262,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id = item.getItemId();
-
+        if (id==R.id.action_about){
+            Intent intent= new Intent(MainActivity.this,Main2Activity.class);
+            startActivity(intent);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
