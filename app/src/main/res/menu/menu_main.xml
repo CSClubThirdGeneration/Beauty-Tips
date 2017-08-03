@@ -1,11 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.firststep.beautytips.MainActivity">
+    tools:context="com.firststep.beautytips.activities.MainActivity">
     <item android:id="@+id/action_about"
         android:title="About"
-
-        android:icon="@drawable/ic_info_black_24dp"
+        android:icon="@drawable/ic_info_outline_black_24dp"
         app:showAsAction="always"/>
 
 </menu>

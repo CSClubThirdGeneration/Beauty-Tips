@@ -1,4 +1,4 @@
-package com.firststep.beautytips;
+package com.firststep.beautytips.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
+import com.firststep.beautytips.R;
+import com.firststep.beautytips.utils.Rabbit;
 import com.squareup.picasso.Picasso;
 
 public class ItemDetailsActivity extends AppCompatActivity {
@@ -25,12 +27,12 @@ public class ItemDetailsActivity extends AppCompatActivity {
         String itemdescription = getIntent().getStringExtra("itemdescription");
         String itemimage = getIntent().getStringExtra("itemimage");
         description = (TextView) findViewById(R.id.item_description);
-        description.setText(itemdescription);
+        description.setText(Rabbit.zg2uni(itemdescription));
 
         image = (ImageView) findViewById(R.id.item_image);
         Picasso.with(getApplicationContext()).load(itemimage).error(R.mipmap.ic_launcher).into(image);
 
-        getSupportActionBar().setTitle(itemtitle);
+        getSupportActionBar().setTitle(Rabbit.zg2uni(itemtitle));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 

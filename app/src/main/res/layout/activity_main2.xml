@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.firststep.beautytips.Main2Activity">
+    tools:context="com.firststep.beautytips.activities.Main2Activity">
     <ImageView
         android:id="@+id/image3"
         android:layout_gravity="center"
@@ -24,7 +24,7 @@
     <TextView
     android:id="@+id/about_desc"
         android:layout_gravity="center"
-    android:text="သင္တို႕ရဲ႕အလွအပကိုသဘာဝပစၥည္းမ်ားသံုးျပီးထိန္းသိမ္းႀကပါစို႕"
+        android:layout_margin="16dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
         android:padding="8dp"
@@ -35,14 +35,35 @@
         android:text="Developed by "
         android:layout_gravity="center"
         android:padding="4dp"
+        android:textColor="#000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:text="Ma Su Pyae Naing and Ma Theint Theint Thu Aung"
+        android:text="Ma Su Pyae Naing"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
+        android:textColor="#000"
         android:layout_height="wrap_content"
-        android:padding="4dp"/>
+        android:layout_margin="8dp"
+       />
+
+    <TextView
+        android:text="&amp;"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:text=" Ma Theint Theint Thu Aung"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        />
 
 </LinearLayout>

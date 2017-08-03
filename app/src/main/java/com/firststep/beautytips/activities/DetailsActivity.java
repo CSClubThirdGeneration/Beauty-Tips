@@ -1,4 +1,4 @@
-package com.firststep.beautytips;
+package com.firststep.beautytips.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.List;
+import com.firststep.beautytips.BeautyTips;
+import com.firststep.beautytips.R;
+import com.firststep.beautytips.utils.Rabbit;
 
 public class DetailsActivity extends AppCompatActivity {
 
@@ -20,6 +20,7 @@ public class DetailsActivity extends AppCompatActivity {
     private String[] item_description;
     private String[] item_image;
     private String title;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +32,16 @@ public class DetailsActivity extends AppCompatActivity {
         item_description = getIntent().getStringArrayExtra("itemdescription");
         item_image = getIntent().getStringArrayExtra("itemimage");
 
-        getSupportActionBar().setTitle(title);
+        getSupportActionBar().setTitle(Rabbit.zg2uni(title));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         item_list = (ListView) findViewById(R.id.item_details);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,item_title);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
+        for (int i=0;i<item_title.length;i++){
+            adapter.add(Rabbit.zg2uni(item_title[i]));
+        }
         item_list.setAdapter(adapter);
         item_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

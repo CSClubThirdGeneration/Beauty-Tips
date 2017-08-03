@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.firststep.beautytips.ItemDetailsActivity">
+    tools:context="com.firststep.beautytips.activities.ItemDetailsActivity">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical" android:layout_width="match_parent"
@@ -14,11 +14,13 @@
             android:id="@+id/item_image"
             android:src="@drawable/ee5"
             android:layout_width="match_parent"
-            android:layout_height="250dp" />
+            android:layout_height="200dp" />
 
         <TextView
             android:id="@+id/item_description"
-            android:text="Hello"
+            android:layout_margin="16dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:typeface="sans"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

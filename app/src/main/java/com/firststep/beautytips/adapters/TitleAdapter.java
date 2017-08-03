@@ -1,4 +1,4 @@
-package com.firststep.beautytips;
+package com.firststep.beautytips.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.firststep.beautytips.BeautyTips;
+import com.firststep.beautytips.R;
+import com.firststep.beautytips.models.TitleModel;
+import com.firststep.beautytips.utils.Rabbit;
+import static com.firststep.beautytips.BeautyTips.typefaceManager;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -37,7 +42,7 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.ViewHolder>{
     public void onBindViewHolder(TitleAdapter.ViewHolder holder, int position) {
         TitleModel titleModel=list.get(position);
         Picasso.with(context).load(titleModel.getImage()).error(R.mipmap.ic_launcher).into(holder.imageView);
-        holder.textView.setText(titleModel.getTitle());
+        holder.textView.setText(Rabbit.zg2uni(titleModel.getTitle()));
     }
 
     @Override

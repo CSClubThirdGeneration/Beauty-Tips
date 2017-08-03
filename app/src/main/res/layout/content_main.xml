@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.firststep.beautytips.MainActivity"
+    tools:context="com.firststep.beautytips.activities.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <com.daimajia.slider.library.SliderLayout

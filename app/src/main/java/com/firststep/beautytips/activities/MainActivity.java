@@ -1,9 +1,8 @@
-package com.firststep.beautytips;
+package com.firststep.beautytips.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,15 +11,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
+import com.firststep.beautytips.BeautyTips;
+import com.firststep.beautytips.R;
+import com.firststep.beautytips.adapters.TitleAdapter;
+import com.firststep.beautytips.models.TitleModel;
+import com.firststep.beautytips.utils.Constant;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.firststep.beautytips.R.array.lips_description;
 
 public class MainActivity extends AppCompatActivity {
     private TitleAdapter titleAdapter;
@@ -42,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        SharedPreferences prefs = BeautyTips.get().getDefaultSharedPreferences();
+        final SharedPreferences.Editor editor = prefs.edit();
+        editor.putBoolean(Constant.IS_UNI_FORCE,true);
+        editor.apply();
+
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
 
         sliderLayout.setPresetTransformer(4);

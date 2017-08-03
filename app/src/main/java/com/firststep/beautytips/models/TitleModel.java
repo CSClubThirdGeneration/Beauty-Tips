@@ -1,4 +1,4 @@
-package com.firststep.beautytips;
+package com.firststep.beautytips.models;
 
 /**
  * Created by DELL on 7/1/2017.
